@@ -3,7 +3,7 @@ import { skills } from '../data/skills';
 
 const Skills = () => {
   return (
-    <section className="skills-page">
+    <section id="skills" className="skills-page">
       <div className="container">
         <h2 className="section-title">My Skills</h2>
         <div className="skills-content">

@@ -2,7 +2,7 @@ import { blogPosts } from '../data/blog';
 
 const Blog = () => {
   return (
-    <section className="blog-page">
+    <section id="blog" className="blog-page">
       <div className="container">
         <h2 className="section-title">My Blog</h2>
         <div className="blog-intro">

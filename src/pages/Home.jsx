@@ -3,7 +3,7 @@ import heroImage from '../assets/images/hero-image.jpg';
 
 const Home = () => {
   return (
-    <section className="home-page">
+    <section id="home" className="home-page">
       <div className="container">
         <div className="hero-content">
           <div className="hero-text">

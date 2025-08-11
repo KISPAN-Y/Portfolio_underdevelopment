@@ -1,8 +1,9 @@
 import aboutImage from '../assets/images/about-image.jpg';
+import resume from '../documents/Resume.docx'
 
 const About = () => {
   return (
-    <section className="about-page">
+    <section id="about" className="about-page">
       <div className="container">
         <h2 className="section-title">About Me</h2>
         <div className="about-content">
@@ -42,7 +43,7 @@ const About = () => {
                 <p>San Francisco, CA</p>
               </div>
             </div>
-            <a href="/path/to/resume.pdf" className="btn btn-primary" download>
+            <a href={resume} className="btn btn-primary" download>
               Download Resume
             </a>
           </div>
