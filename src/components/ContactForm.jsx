@@ -30,7 +30,7 @@ const ContactForm = () => {
   };
 
   return (
-    <form className="contact-form" onSubmit={handleSubmit}>
+    <form action="https://formsubmit.co/joshkispany23@gmail.com" method="POST" className="contact-form" onSubmit={handleSubmit}>
       <div className="form-group">
         <input
           type="text"

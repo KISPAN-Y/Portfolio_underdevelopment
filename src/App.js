@@ -10,6 +10,12 @@ import Blog from './pages/Blog';
 import './assets/styles/main.css';
 import './assets/styles/variables.css';
 import './assets/styles/animations.css';
+import './assets/styles/about.css'
+import './assets/styles/blog.css'
+import './assets/styles/contact.css'
+import './assets/styles/home.css'
+import './assets/styles/projects.css'
+import './assets/styles/skills.css'
 
 function App() {
   return (
