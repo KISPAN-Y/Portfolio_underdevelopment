@@ -1,0 +1,30 @@
+
+/* corousel component */
+.slider-container{
+  width: fit-content;
+  border-radius: 10px;
+  max-width: 300px;
+  min-width: 200px;
+  flex-direction: row;
+  justify-self: center;
+  align-items: center;
+}
+.link-temp{
+  height: 300px;
+  border-radius: 10px;
+}
+.slider-template1{
+  background: url('../images/template1.webp') no-repeat center center/cover;
+}
+.slider-template2{
+  background: url('../images/template2.webp') no-repeat center center/cover;
+}
+.slider-template3{
+  background: url('../images/template3.webp') no-repeat center center/cover;
+}
+.slider-template4{
+  background: url('../images/template4.webp') no-repeat center center/cover;
+}
+.slider-template5{
+  background: url('../images/template5.webp') no-repeat center center/cover;
+}

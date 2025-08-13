@@ -16,6 +16,7 @@ import './assets/styles/contact.css'
 import './assets/styles/home.css'
 import './assets/styles/projects.css'
 import './assets/styles/skills.css'
+import './assets/styles/corousel.css';
 
 function App() {
   return (

@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import heroImage from '../assets/images/hero-image.png';
+import PauseOnHover from '../components/corousel';
+
 
 const Home = () => {
   return (
@@ -27,7 +29,8 @@ const Home = () => {
             </div>
           </div>
           <div className="hero-image">
-            <img src={heroImage} alt="Developer working" className="profile-image" />
+            {/* <img src={heroImage} alt="Developer working" className="profile-image" /> */}
+            <PauseOnHover />
           </div>
         </div>
       </div>
