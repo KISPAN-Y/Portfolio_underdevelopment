@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import moon from '../assets/images/moon.webp'
+import sun from '../assets/images/sun.webp'
 
 const ThemeToggle = () => {
   const [theme, setTheme] = useState('light');
@@ -17,11 +19,11 @@ const ThemeToggle = () => {
   };
 
   return (
-    <button className="theme-toggle" onClick={toggleTheme}>
+    <button className="theme-toggle bounce" onClick={toggleTheme}>
       {theme === 'light' ? (
-        <i className="fas fa-moon"></i>
+        <img src={moon} className="moon"></img>
       ) : (
-        <i className="fas fa-sun"></i>
+        <img src={sun} className="moon"></img>
       )}
     </button>
   );

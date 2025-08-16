@@ -1,6 +1,8 @@
+import useScrollAnimation from '../hooks/UseScrollAnimation';
+
 const ProjectCard = ({ project }) => {
   return (
-    <div className="project-card">
+    <div className="project-card animate-up">
       <div className="project-image">
         <img src={project.image} alt={project.title} />
         <div className="project-links">

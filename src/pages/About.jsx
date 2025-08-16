@@ -1,4 +1,4 @@
-import aboutImage from '../assets/images/about-image.jpg';
+import aboutImage from '../assets/images/kpy.png';
 import resume from '../documents/Resume.docx'
 
 const About = () => {
@@ -8,7 +8,7 @@ const About = () => {
         <h2 className="section-title">About Me</h2>
         <div className="about-content">
           <div className="about-image">
-            <img src={aboutImage} alt="About me" className="profile-image" />
+            <img src={aboutImage} alt="About me" className="profile-image animate-left delay-3" />
           </div>
           <div className="about-text">
             <p>
@@ -28,11 +28,11 @@ const About = () => {
             <div className="about-details">
               <div className="detail-item">
                 <h3>Name:</h3>
-                <p>KISPANY Developer</p>
+                <p className='p animate-left'>KISPANY Developer</p>
               </div>
               <div className="detail-item">
                 <h3>Email:</h3>
-                <p>alex@devportfolio.com</p>
+                <p className='p opacity-0 animate-left delay-5'>kispany@gmail.com</p>
               </div>
               <div className="detail-item">
                 <h3>Experience:</h3>
@@ -43,7 +43,7 @@ const About = () => {
                 <p>San Francisco, CA</p>
               </div>
             </div>
-            <a href={resume} className="btn btn-primary" download>
+            <a href={resume} className="btn btn-primary bounce bounce-hover" download>
               Download Resume
             </a>
           </div>

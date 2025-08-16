@@ -9,26 +9,26 @@ const Home = () => {
       <div className="container">
         <div className="hero-content">
           <div className="hero-text">
-            <h1 className="hero-title">
+            <h1 className="hero-title animate-up delay-3">
               Hi, I'm <span className="highlight">KISPANY</span>
             </h1>
-            <h2 className="hero-subtitle">
+            <h2 className="hero-subtitle animate-up delay-2">
               Full Stack Developer & Designer
             </h2>
-            <p className="hero-description">
+            <p className="hero-description animate-up delay-1">
               I build exceptional digital experiences with modern technologies.
               Specializing in React, Next.js, Django, and Node.js with an eye for design.
             </p>
             <div className="hero-actions">
-              <Link to="/projects" className="btn btn-primary">
+              <Link to="/projects" className="btn btn-primary animate-up">
                 View My Work
               </Link>
-              <Link to="/contact" className="btn btn-secondary">
+              <Link to="/contact" className="btn btn-secondary animate-right delay-5">
                 Contact Me
               </Link>
             </div>
           </div>
-          <div className="hero-image">
+          <div className="hero-image animate-right delay-5">
             {/* <img src={heroImage} alt="Developer working" className="profile-image" /> */}
             <PauseOnHover />
           </div>

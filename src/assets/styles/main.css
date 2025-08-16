@@ -6,6 +6,7 @@
   --light-color: #ecf0f1;
   --text-color: #333;
   --text-light: #7f8c8d;
+  --h2-color: #0f1013;
   --white: #fff;
   --black: #000;
   --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -51,6 +52,9 @@ a:hover {
   color: var(--secondary-color);
 }
 
+li:hover {
+  transform: scale(1.1);
+}
 .btn {
   display: inline-block;
   padding: 12px 24px;
@@ -60,6 +64,7 @@ a:hover {
   transition: var(--transition);
   cursor: pointer;
   border: none;
+  opacity: 0;
 }
 
 .btn-primary {
@@ -111,7 +116,7 @@ a:hover {
 
 /* Header Styles */
 .header {
-  background-color: var(--white);
+  background-color: var(--nav-bar-color);
   box-shadow: var(--shadow);
   position: fixed;
   width: 100%;
@@ -154,7 +159,7 @@ a:hover {
 .nav-link {
   padding: 10px 15px;
   font-weight: 600;
-  color: var(--dark-color);
+  color: var(--nav-text);
   position: relative;
 }
 
@@ -226,6 +231,17 @@ a:hover {
 .menu-icon.open::after {
   top: 0;
   transform: rotate(-45deg);
+}
+
+.theme-toggle{
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.moon{
+  width: 30px;
+  height: 30px;
 }
 
 /* Main Content */

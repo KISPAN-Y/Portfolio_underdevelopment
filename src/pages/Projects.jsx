@@ -1,7 +1,11 @@
 import ProjectCard from '../components/ProjectCard';
 import { projects } from '../data/projects';
+import useScrollAnimation from '../hooks/UseScrollAnimation';
+import React, { useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 const Projects = () => {
+  useScrollAnimation();
   return (
     <section id="projects" className="projects-page">
       <div className="container">
@@ -13,11 +17,17 @@ const Projects = () => {
           <button className="filter-btn">Full Stack</button>
           <button className="filter-btn">Design</button>
         </div>
-        <div className="projects-grid">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: 'easeOut' }}
+          viewport={{ once: false, amount: 0.2 }}
+          className="projects-grid"
+        >
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

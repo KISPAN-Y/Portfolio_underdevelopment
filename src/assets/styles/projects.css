@@ -1,8 +1,10 @@
-
 /* Projects Page */
 .projects-page {
   padding: 100px 0;
+  background-color: var(--section-color3);
 }
+
+.on-scroll-animate{}
 
 .projects-filter {
   display: flex;

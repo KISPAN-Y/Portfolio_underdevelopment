@@ -20,6 +20,7 @@
   margin-bottom: 20px;
   line-height: 1.2;
   color: var(--black);
+  opacity: 0;
 }
 
 .hero-subtitle {
@@ -27,6 +28,7 @@
   color: var(--white);
   margin-bottom: 25px;
   font-weight: 400;
+  opacity: 0;
 }
 
 .hero-description {
@@ -34,6 +36,7 @@
   font-size: 1.1rem;
   max-width: 600px;
   color: var(--light-color);
+  opacity: 0;
 }
 
 .hero-actions {
@@ -44,11 +47,6 @@
 .hero-image {
   flex: 1;
   text-align: center;
+  opacity: 0;
 }
 
-.profile-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: var(--shadow);
-}

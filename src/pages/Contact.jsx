@@ -16,11 +16,11 @@ const Contact = () => {
             <div className="contact-details">
               <div className="contact-item">
                 <i className="fas fa-envelope"></i>
-                <span>alex@devportfolio.com</span>
+                <span>kispany@gmail.com</span>
               </div>
               <div className="contact-item">
                 <i className="fas fa-phone"></i>
-                <span>+1 (555) 123-4567</span>
+                <span>+255 (555) 123-4567</span>
               </div>
               <div className="contact-item">
                 <i className="fas fa-map-marker-alt"></i>
