@@ -2,7 +2,7 @@
 /* Contact Page */
 .contact-page {
   padding: 100px 0;
-  background-color: var(--section-color3);
+  background: var(--gradient1);
 }
 
 .contact-content {
@@ -13,15 +13,16 @@
 
 .contact-info {
   padding: 30px;
-  background-color: var(--card-bg);
+  background: var(--gradient2);
   border-radius: 10px;
   box-shadow: var(--shadow);
+  color: var(--p-text);
 }
 
 .contact-subtitle {
   font-size: 1.5rem;
   margin-bottom: 20px;
-  color: var(--h2-color)
+  color: var(--h2-color);
 }
 
 .contact-details {
@@ -59,7 +60,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--dark-color);
+  color: var(--black);
   transition: var(--transition);
 }
 
@@ -71,16 +72,35 @@
 
 .contact-form-wrapper {
   padding: 30px;
-  background-color: var(--card-bg);
+  padding-top: 40px;
+  background: url('../images/form-bg.webp')  no-repeat center center/cover;
   border-radius: 10px;
   box-shadow: var(--shadow);
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .form-group {
   margin-bottom: 20px;
 }
 
-.form-group input,
+input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  transition: var(--transition);
+  color: var(--white);
+  background: none;
+}
+
 .form-group textarea {
   width: 100%;
   padding: 12px 15px;

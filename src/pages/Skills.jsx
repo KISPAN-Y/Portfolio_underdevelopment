@@ -1,5 +1,6 @@
 import SkillBar from '../components/SkillBar';
 import { skills } from '../data/skills';
+import { motion } from 'framer-motion';
 
 const Skills = () => {
   return (
@@ -15,24 +16,36 @@ const Skills = () => {
             </p>
           </div>
           <div className="skills-container">
-            <div className="skills-category">
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 2, ease: 'easeOut' }}
+              viewport={{ once: false, amount: 0.2 }}
+              className="skills-category"
+            >
               <h3 className="skills-category-title">Frontend Development</h3>
               {skills.frontend.map((skill) => (
                 <SkillBar key={skill.name} skill={skill} />
               ))}
-            </div>
+            </motion.div>
             <div className="skills-category">
               <h3 className="skills-category-title">Backend Development</h3>
               {skills.backend.map((skill) => (
                 <SkillBar key={skill.name} skill={skill} />
               ))}
             </div>
-            <div className="skills-category">
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 2, ease: 'easeOut' }}
+              viewport={{ once: false, amount: 0.2 }}
+              className="skills-category"
+            >
               <h3 className="skills-category-title">Design & Tools</h3>
               {skills.design.map((skill) => (
                 <SkillBar key={skill.name} skill={skill} />
               ))}
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

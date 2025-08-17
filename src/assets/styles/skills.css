@@ -2,6 +2,7 @@
 /* Skills Page */
 .skills-page {
   padding: 100px 0;
+  background-color: var(--section-color2);
 }
 
 .skills-intro {

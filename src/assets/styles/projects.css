@@ -4,8 +4,6 @@
   background-color: var(--section-color3);
 }
 
-.on-scroll-animate{}
-
 .projects-filter {
   display: flex;
   justify-content: center;
@@ -17,7 +15,7 @@
   padding: 8px 20px;
   background-color: transparent;
   border: 1px solid var(--primary-color);
-  color: var(--primary-color);
+  color: var(--h2-color);
   border-radius: 4px;
   cursor: pointer;
   transition: var(--transition);
@@ -36,7 +34,7 @@
 }
 
 .project-card {
-  background-color: var(--white);
+  background-color: var(--card-bg);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -100,10 +98,15 @@
 .project-links a:hover {
   background-color: var(--secondary-color);
   transform: translateY(-5px);
+  transition: var(--transition);
 }
 
 .project-info {
   padding: 20px;
+}
+
+.prj{
+  color: var(--blue-white);
 }
 
 .project-title {

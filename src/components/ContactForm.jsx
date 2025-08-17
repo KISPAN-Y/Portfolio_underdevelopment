@@ -36,6 +36,7 @@ const ContactForm = () => {
           type="text"
           name="name"
           placeholder="Your Name"
+          className='input backdrop-blur-10'
           value={formData.name}
           onChange={handleChange}
           required
@@ -46,6 +47,7 @@ const ContactForm = () => {
           type="email"
           name="email"
           placeholder="Your Email"
+          className='input backdrop-blur-10'
           value={formData.email}
           onChange={handleChange}
           required
@@ -56,6 +58,7 @@ const ContactForm = () => {
           type="text"
           name="subject"
           placeholder="Subject"
+          className='input backdrop-blur-10'
           value={formData.subject}
           onChange={handleChange}
           required
@@ -65,12 +68,13 @@ const ContactForm = () => {
         <textarea
           name="message"
           placeholder="Your Message"
+          className='input backdrop-blur-10'
           value={formData.message}
           onChange={handleChange}
           required
         ></textarea>
       </div>
-      <button type="submit" className="btn btn-primary">
+      <button type="submit" className="btn opacity-1 btn-form">
         Send Message
       </button>
     </form>

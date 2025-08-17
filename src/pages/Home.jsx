@@ -23,7 +23,7 @@ const Home = () => {
               <Link to="/projects" className="btn btn-primary animate-up">
                 View My Work
               </Link>
-              <Link to="/contact" className="btn btn-secondary animate-right delay-5">
+              <Link to="/contact" className="btn btn-secondary white animate-right delay-5">
                 Contact Me
               </Link>
             </div>

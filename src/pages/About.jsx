@@ -43,7 +43,7 @@ const About = () => {
                 <p>San Francisco, CA</p>
               </div>
             </div>
-            <a href={resume} className="btn btn-primary bounce bounce-hover" download>
+            <a href={resume} className="btn btn-primary bounce bounce-hover-none" download>
               Download Resume
             </a>
           </div>

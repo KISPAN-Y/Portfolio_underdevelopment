@@ -15,18 +15,18 @@ const Footer = () => {
             <ul>
               <li><a href="/">Home</a></li>
               <li><a href="/about">About</a></li>
-              <li><a href="/projects">Projects</a></li>
-              <li><a href="/skills">Skills</a></li>
-              <li><a href="/contact">Contact</a></li>
-              <li><a href="/blog">Blog</a></li>
+              <li><a href="/#projects">Projects</a></li>
+              <li><a href="/#skills">Skills</a></li>
+              <li><a href="/#contact">Contact</a></li>
+              <li><a href="/#blog">Blog</a></li>
             </ul>
           </div>
           <div className="footer-contact">
             <h3 className="footer-title">Contact Info</h3>
             <ul>
-              <li>San Francisco, CA</li>
-              <li>kispany@gmail.com</li>
-              <li>+255 (555) 123-4567</li>
+              <p>San Francisco, CA</p>
+              <p>kispany@gmail.com</p>
+              <p>+255 (555) 123-4567</p>
             </ul>
           </div>
         </div>
@@ -34,16 +34,16 @@ const Footer = () => {
           <p>&copy; {new Date().getFullYear()} DevPortfolio. All rights reserved.</p>
           <div className="social-links">
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-github"></i>
+              <i className="fab fa-github blue"></i>
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-linkedin"></i>
+              <i className="fab fa-linkedin blue"></i>
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-twitter"></i>
+              <i className="fab fa-twitter blue"></i>
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-dribbble"></i>
+              <i className="fab fa-dribbble blue"></i>
             </a>
           </div>
         </div>
