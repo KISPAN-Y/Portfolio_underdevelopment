@@ -43,7 +43,7 @@ const Contact = () => {
                 className="contact-item"
               >
                 <i className="fas fa-map-marker-alt"></i>
-                <span>San Francisco, CA</span>
+                <span>Sakina, Arusha</span>
               </motion.div>
             </div>
             <div className="social-links">

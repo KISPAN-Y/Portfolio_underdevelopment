@@ -24,9 +24,9 @@ const Footer = () => {
           <div className="footer-contact">
             <h3 className="footer-title">Contact Info</h3>
             <ul>
-              <p>San Francisco, CA</p>
+              <p>Sakina, Arusha</p>
               <p>kispany@gmail.com</p>
-              <p>+255 (555) 123-4567</p>
+              <p>+255 659 418 404</p>
             </ul>
           </div>
         </div>

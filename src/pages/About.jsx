@@ -36,11 +36,11 @@ const About = () => {
               </div>
               <div className="detail-item">
                 <h3>Experience:</h3>
-                <p>5+ Years</p>
+                <p>2+ Years</p>
               </div>
               <div className="detail-item">
                 <h3>Location:</h3>
-                <p>San Francisco, CA</p>
+                <p>Sakina, Arusha</p>
               </div>
             </div>
             <a href={resume} className="btn btn-primary bounce bounce-hover-none" download>
