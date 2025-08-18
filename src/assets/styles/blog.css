@@ -61,6 +61,7 @@
 .blog-title {
   font-size: 1.3rem;
   margin-bottom: 10px;
+  color: var(--black)
 }
 
 .blog-excerpt {
