@@ -15,14 +15,19 @@ const ProjectCard = ({ project }) => {
         </div>
       </div>
       <div className="project-info">
-        <h3 className="project-title">{project.title}</h3>
-        <p className="project-description">{project.description}</p>
-        <div className="project-tags">
+        <h3 className="project-title z-index-3">{project.title}</h3>
+        <p className="project-description z-index-2">{project.description}</p>
+        <div className="project-tags z-index-2">
           {project.tags.map((tag, index) => (
-            <span key={index} className="project-tag">
+            <span key={index} className="project-tag z-index-2">
               {tag}
             </span>
           ))}
+        </div>
+        <div className='drops z-index-1'>
+          <p className='drop z-index-1 opacity-05'></p>
+          <p className='drop z-index-1 opacity-05'></p>
+          <p className='drop z-index-1 opacity-05'></p>
         </div>
       </div>
     </div>
