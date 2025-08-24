@@ -1,6 +1,6 @@
-import SkillBar from '../components/SkillBar';
 import { skills } from '../data/skills';
 import { motion } from 'framer-motion';
+import '../assets/styles/skills.css'; // Import the CSS file
 
 const Skills = () => {
   return (
@@ -23,17 +23,73 @@ const Skills = () => {
               viewport={{ once: false, amount: 0.2 }}
               className="skills-category"
             >
-              <h3 className="skills-category-title">Frontend Development</h3>
-              {skills.frontend.map((skill) => (
-                <SkillBar key={skill.name} skill={skill} />
-              ))}
+              <div className="skill-card">
+                <div className="skill-card-inner">
+                  <div className="skill-card-front">
+                    <div className="skill-icon">💻</div>
+                    <h3 className="skills-category-title">Frontend Development</h3>
+                    <div className="skill-list">
+                      {skills.frontend.map((skill) => (
+                        <div key={skill.name} className="skill-item">
+                          <span className="skill-name">{skill.name}</span>
+                          <span>{skill.level}%</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="skill-card-back">
+                    <div className="skill-icon">💻</div>
+                    <h3 className="skills-category-title">Frontend Development</h3>
+                    <div className="skill-list">
+                      {skills.frontend.map((skill) => (
+                        <div key={skill.name} className="skill-item">
+                          <span className="skill-name">{skill.name}</span>
+                          <span>{skill.level}%</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
             </motion.div>
-            <div className="skills-category">
-              <h3 className="skills-category-title">Backend Development</h3>
-              {skills.backend.map((skill) => (
-                <SkillBar key={skill.name} skill={skill} />
-              ))}
-            </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 2, ease: 'easeOut' }}
+              viewport={{ once: false, amount: 0.2 }}
+              className="skills-category"
+            >
+              <div className="skill-card">
+                <div className="skill-card-inner">
+                  <div className="skill-card-front">
+                    <div className="skill-icon">⚙️</div>
+                    <h3 className="skills-category-title">Backend Development</h3>
+                    <div className="skill-list">
+                      {skills.backend.map((skill) => (
+                        <div key={skill.name} className="skill-item">
+                          <span className="skill-name">{skill.name}</span>
+                          <span>{skill.level}%</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="skill-card-back">
+                    <div className="skill-icon">⚙️</div>
+                    <h3 className="skills-category-title">Backend Development</h3>
+                    <div className="skill-list">
+                      {skills.backend.map((skill) => (
+                        <div key={skill.name} className="skill-item">
+                          <span className="skill-name">{skill.name}</span>
+                          <span>{skill.level}%</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
             <motion.div
               initial={{ opacity: 0, x: 40 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -41,10 +97,34 @@ const Skills = () => {
               viewport={{ once: false, amount: 0.2 }}
               className="skills-category"
             >
-              <h3 className="skills-category-title">Design & Tools</h3>
-              {skills.design.map((skill) => (
-                <SkillBar key={skill.name} skill={skill} />
-              ))}
+              <div className="skill-card">
+                <div className="skill-card-inner">
+                  <div className="skill-card-front">
+                    <div className="skill-icon">🎨</div>
+                    <h3 className="skills-category-title">Design & Tools</h3>
+                    <div className="skill-list">
+                      {skills.design.map((skill) => (
+                        <div key={skill.name} className="skill-item">
+                          <span className="skill-name">{skill.name}</span>
+                          <span>{skill.level}%</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="skill-card-back">
+                    <div className="skill-icon">🎨</div>
+                    <h3 className="skills-category-title">Design & Tools</h3>
+                    <div className="skill-list">
+                      {skills.design.map((skill) => (
+                        <div key={skill.name} className="skill-item">
+                          <span className="skill-name">{skill.name}</span>
+                          <span>{skill.level}%</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>
