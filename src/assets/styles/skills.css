@@ -139,7 +139,7 @@
 .skill-bar {
   height: 8px;
   border-radius: 10px;
-  background: linear-gradient(90deg, #3498db, #2ecc71);
+  background: rgba(90, 94, 102, 0.432);
   transition: width 1s ease-in-out;
 }
 
@@ -248,3 +248,4 @@
   left: 45%;
   animation-delay: 2s;
 }
+
