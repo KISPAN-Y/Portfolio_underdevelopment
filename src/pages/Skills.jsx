@@ -1,6 +1,7 @@
 import { skills } from '../data/skills';
 import { motion } from 'framer-motion';
 import '../assets/styles/skills.css'; // Import the CSS file
+import SkillBar from '../components/SkillBar';
 
 const Skills = () => {
   return (
@@ -112,14 +113,16 @@ const Skills = () => {
                     </div>
                   </div>
                   <div className="skill-card-back">
-                    <div className="skill-icon">🎨</div>
-                    <h3 className="skills-category-title">Design & Tools</h3>
-                    <div className="skill-list">
+                    <div
+                      initial={{ opacity: 0, x: 40 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 2, ease: 'easeOut' }}
+                      viewport={{ once: false, amount: 0.2 }}
+                      className="width-100 flex-column"
+                    >
+                      <h3 className="skills-category-title">Design & Tools</h3>
                       {skills.design.map((skill) => (
-                        <div key={skill.name} className="skill-item">
-                          <span className="skill-name">{skill.name}</span>
-                          <span>{skill.level}%</span>
-                        </div>
+                        <SkillBar key={skill.name} skill={skill} />
                       ))}
                     </div>
                   </div>
