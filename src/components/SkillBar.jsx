@@ -1,7 +1,7 @@
 const SkillBar = ({ skill }) => {
   return (
     <div className="skill-item flex-column width-100">
-      <div className="flex-row space-around">
+      <div className="skill-info flex-row space-between width-100">
         <span className="skill-name">{skill.name}</span>
         <span className="skill-percent">{skill.level}%</span>
       </div>

@@ -26,29 +26,14 @@ const Skills = () => {
             >
               <div className="skill-card">
                 <div className="skill-card-inner">
-                  <div className="skill-card-front">
-                    <div className="skill-icon">💻</div>
-                    <h3 className="skills-category-title">Frontend Development</h3>
-                    <div className="skill-list">
-                      {skills.frontend.map((skill) => (
-                        <div key={skill.name} className="skill-item">
-                          <span className="skill-name">{skill.name}</span>
-                          <span>{skill.level}%</span>
-                        </div>
-                      ))}
-                    </div>
+                  <div className="skill-card-front front1">
+                    <h3 className="skills-category-title-f">Frontend Development</h3>
                   </div>
                   <div className="skill-card-back">
-                    <div className="skill-icon">💻</div>
-                    <h3 className="skills-category-title">Frontend Development</h3>
-                    <div className="skill-list">
+                    <h3 className="skills-category-title-b">Frontend Development</h3>
                       {skills.frontend.map((skill) => (
-                        <div key={skill.name} className="skill-item">
-                          <span className="skill-name">{skill.name}</span>
-                          <span>{skill.level}%</span>
-                        </div>
+                        <SkillBar key={skill.name} skill={skill} />
                       ))}
-                    </div>
                   </div>
                 </div>
               </div>
@@ -63,29 +48,14 @@ const Skills = () => {
             >
               <div className="skill-card">
                 <div className="skill-card-inner">
-                  <div className="skill-card-front">
-                    <div className="skill-icon">⚙️</div>
-                    <h3 className="skills-category-title">Backend Development</h3>
-                    <div className="skill-list">
-                      {skills.backend.map((skill) => (
-                        <div key={skill.name} className="skill-item">
-                          <span className="skill-name">{skill.name}</span>
-                          <span>{skill.level}%</span>
-                        </div>
-                      ))}
-                    </div>
+                  <div className="skill-card-front front2">
+                    <h3 className="skills-category-title-f">Backend Development</h3>
                   </div>
                   <div className="skill-card-back">
-                    <div className="skill-icon">⚙️</div>
-                    <h3 className="skills-category-title">Backend Development</h3>
-                    <div className="skill-list">
+                    <h3 className="skills-category-title-b">Backend Development</h3>
                       {skills.backend.map((skill) => (
-                        <div key={skill.name} className="skill-item">
-                          <span className="skill-name">{skill.name}</span>
-                          <span>{skill.level}%</span>
-                        </div>
+                        <SkillBar key={skill.name} skill={skill} />
                       ))}
-                    </div>
                   </div>
                 </div>
               </div>
@@ -100,17 +70,8 @@ const Skills = () => {
             >
               <div className="skill-card">
                 <div className="skill-card-inner">
-                  <div className="skill-card-front">
-                    <div className="skill-icon">🎨</div>
-                    <h3 className="skills-category-title">Design & Tools</h3>
-                    <div className="skill-list">
-                      {skills.design.map((skill) => (
-                        <div key={skill.name} className="skill-item">
-                          <span className="skill-name">{skill.name}</span>
-                          <span>{skill.level}%</span>
-                        </div>
-                      ))}
-                    </div>
+                  <div className="skill-card-front front3">
+                    <h3 className="skills-category-title-f">Design & Tools</h3>
                   </div>
                   <div className="skill-card-back">
                     <div
@@ -120,7 +81,7 @@ const Skills = () => {
                       viewport={{ once: false, amount: 0.2 }}
                       className="width-100 flex-column"
                     >
-                      <h3 className="skills-category-title">Design & Tools</h3>
+                      <h3 className="skills-category-title-b">Design & Tools</h3>
                       {skills.design.map((skill) => (
                         <SkillBar key={skill.name} skill={skill} />
                       ))}

@@ -1,7 +1,7 @@
 /* skills.css */
 .skills-page {
   padding: 4rem 0;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: var(--gradient4);
   min-height: 100vh;
 }
 
@@ -37,7 +37,7 @@
   margin: 0 auto 3rem;
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #34495e;
+  color: var(--white);
 }
 
 .skills-container {
@@ -60,7 +60,6 @@
   transform-style: preserve-3d;
   cursor: pointer;
   border-radius: 15px;
-  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
 }
 
 .skill-card:hover .skill-card-inner {
@@ -88,23 +87,39 @@
   padding: 2rem;
 }
 
-.skill-card-front {
-  background: white;
-  color: #2c3e50;
+.front1 {
+  background: linear-gradient(180deg, rgba(1, 1, 9, 0.585), rgba(1, 1, 9, 0.585)), url('../images/frontend.webp') no-repeat center center/cover;
+}
+
+.front2 {
+  background: linear-gradient(180deg, rgba(1, 1, 9, 0.585), rgba(1, 1, 9, 0.585)), url('../images/backend.webp') no-repeat center center/cover;
+}
+
+.front3 {
+  background: linear-gradient(180deg, rgba(1, 1, 9, 0.585), rgba(1, 1, 9, 0.585)), url('../images/graphix&design.webp') no-repeat center center/cover;
 }
 
 .skill-card-back {
-  background: linear-gradient(135deg, #3498db 0%, #2ecc71 100%);
+  background: var(--card-bg);
   color: white;
   transform: rotateY(180deg);
   overflow-y: auto;
+  backdrop-filter: blur(10px);
 }
 
-.skills-category-title {
+.skills-category-title-f {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
-  color: inherit;
+  color: var(--white);
+}
+
+.skills-category-title-b {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: var(--h1-color);
+  border-bottom: #16171967 solid 0.7px;
 }
 
 .skill-icon {
@@ -122,6 +137,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--h1-color);
 }
 
 .skill-name {
@@ -152,6 +168,12 @@
 .back-content {
   text-align: center;
   line-height: 1.6;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
 }
 
 .back-list {

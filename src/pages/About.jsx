@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section id="about" className="about-page">
       <div className="container">
-        <h2 className="section-title">About Me</h2>
+        <h2 className="section-title white">About Me</h2>
         <div className="about-content">
           <div className="about-image">
             <img src={aboutImage} alt="About me" className="profile-image animate-left delay-3" />

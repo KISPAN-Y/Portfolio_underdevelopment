@@ -12,11 +12,11 @@ const Projects = () => {
       <div className="container">
         <h2 className="section-title">My Projects</h2>
         <div className="projects-filter">
-          <button className="filter-btn active">All</button>
-          <button className="filter-btn">Frontend</button>
-          <button className="filter-btn">Backend</button>
-          <button className="filter-btn">Full Stack</button>
-          <button className="filter-btn">Design</button>
+          <button className="filter-btn active white">All</button>
+          <button className="filter-btn white">Frontend</button>
+          <button className="filter-btn white">Backend</button>
+          <button className="filter-btn white">Full Stack</button>
+          <button className="filter-btn white">Design</button>
         </div>
         <motion.div
           initial={{ opacity: 1, y: 20 }}
@@ -37,7 +37,7 @@ const Projects = () => {
           style={{width: '100%'}}
           className='flex center'
         >
-          <Link to="/projects" className="btn btn-advance prj opacity-1">View All Projects</Link>
+          <Link to="/projects" className="btn btn-advance prj white opacity-1">View All Projects</Link>
         </motion.div>
       </div>
     </section>

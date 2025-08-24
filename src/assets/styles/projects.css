@@ -1,7 +1,7 @@
 /* Projects Page */
 .projects-page {
   padding: 100px 0;
-  background-color: var(--section-color3);
+  background: var(--gradient4);
 }
 
 .projects-filter {
@@ -115,7 +115,6 @@
 }
 
 .project-description {
-  color: var(--text-light);
   margin-bottom: 15px;
 }
 

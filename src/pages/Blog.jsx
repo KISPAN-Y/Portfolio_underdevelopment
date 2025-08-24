@@ -5,7 +5,7 @@ const Blog = () => {
     <section id="blog" className="blog-page">
       <div className="container">
         <h2 className="section-title">My Blog</h2>
-        <div className="blog-intro">
+        <div className="blog-intro white">
           <p>
             I regularly write about web development, design, and technology.
             Here are some of my latest articles and tutorials.
