@@ -7,6 +7,7 @@ import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
+import DjangoTips from './pages/Django_tips';
 import './assets/styles/main.css';
 import './assets/styles/variables.css';
 import './assets/styles/animations.css';
@@ -17,6 +18,7 @@ import './assets/styles/home.css'
 import './assets/styles/projects.css'
 import './assets/styles/skills.css'
 import './assets/styles/corousel.css';
+import './assets/styles/djangotips.css';
 
 function App() {
   return (
@@ -32,6 +34,7 @@ function App() {
               <Blog />
               <Contact />
             </Route>
+            <Route path="/django-tips" component={DjangoTips} />
             <Route path="/about" component={About} />
           </Switch>
         </main>

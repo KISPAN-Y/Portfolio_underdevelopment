@@ -1,0 +1,53 @@
+.djangopage{
+    background-image: repeating-linear-gradient(45deg, rgba(0, 255, 128, 0.2) 0px, rgba(0, 255, 128, 0) 2px, transparent 2px, transparent 25px);
+}
+
+.container-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.popular {
+    grid-row: span 5;
+}
+
+.pst {
+    position: sticky;
+    top: 100px;
+    gap: 20px;
+}
+
+.tips-container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.view-code {
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.939);
+    background: rgb(44, 43, 43);
+    border-radius: 10px;
+    border: none;
+    height: fit-content;
+}
+
+.img-py {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.tip-card {
+    align-items: center;
+    width: 500px;
+    gap: 20px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.47);
+    padding: 20px;
+    border-radius: 5px;
+}

@@ -1,4 +1,5 @@
 import { blogPosts } from '../data/blog';
+import { Link } from 'react-router-dom';
 
 const Blog = () => {
   return (
@@ -24,9 +25,9 @@ const Blog = () => {
                 </div>
                 <h3 className="blog-title">{post.title}</h3>
                 <p className="blog-excerpt">{post.excerpt}</p>
-                <a href={`/blog/${post.slug}`} className="read-more">
+                <Link to="/django-tips" className="read-more">
                   Read More <i className="fas fa-arrow-right"></i>
-                </a>
+                </Link>
               </div>
             </article>
           ))}
