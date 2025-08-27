@@ -1,3 +1,5 @@
+import { link } from "motion/react-client";
+
 export const blogPosts = [
   {
     id: 1,

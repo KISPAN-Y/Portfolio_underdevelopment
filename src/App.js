@@ -8,6 +8,8 @@ import Skills from './pages/Skills';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
 import DjangoTips from './pages/Django_tips';
+import Scalable from './pages/Scalable-react';
+import reactNextjs from './pages/react-next';
 import './assets/styles/main.css';
 import './assets/styles/variables.css';
 import './assets/styles/animations.css';
@@ -34,7 +36,9 @@ function App() {
               <Blog />
               <Contact />
             </Route>
-            <Route path="/django-tips" component={DjangoTips} />
+            <Route path="/django-rest-framework-tips" component={DjangoTips} />
+            <Route path="/building-scalable-react-apps" component={Scalable} />
+            <Route path="/nextjs-vs-react" component={reactNextjs} />
             <Route path="/about" component={About} />
           </Switch>
         </main>

@@ -25,7 +25,7 @@ const Blog = () => {
                 </div>
                 <h3 className="blog-title">{post.title}</h3>
                 <p className="blog-excerpt">{post.excerpt}</p>
-                <Link to="/django-tips" className="read-more">
+                <Link to={ `/${post.slug}` } className="read-more">
                   Read More <i className="fas fa-arrow-right"></i>
                 </Link>
               </div>
