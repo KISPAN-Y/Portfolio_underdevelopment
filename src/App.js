@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -21,13 +22,25 @@ import './assets/styles/projects.css'
 import './assets/styles/skills.css'
 import './assets/styles/corousel.css';
 import './assets/styles/djangotips.css';
+import PreLoader from './components/PreLoader';
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+  
   return (
     <Router>
       <div className="app-container">
         <Header />
         <main className="main-content">
+          {isLoading && <PreLoader />}
           <Switch>
             <Route exact path="/">
               <Home />

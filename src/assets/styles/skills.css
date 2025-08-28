@@ -88,15 +88,15 @@
 }
 
 .front1 {
-  background: linear-gradient(180deg, rgba(1, 1, 9, 0.585), rgba(1, 1, 9, 0.585)), url('../images/frontend.webp') no-repeat center center/cover;
+  background: url('../images/frontend.webp') no-repeat center center/cover;
 }
 
 .front2 {
-  background: linear-gradient(180deg, rgba(1, 1, 9, 0.585), rgba(1, 1, 9, 0.585)), url('../images/backend.webp') no-repeat center center/cover;
+  background: url('../images/backend.webp') no-repeat center center/cover;
 }
 
 .front3 {
-  background: linear-gradient(180deg, rgba(1, 1, 9, 0.471), rgba(1, 1, 9, 0.471)), url('../images/graphix&design.webp') no-repeat center center/cover;
+  background: url('../images/graphix&design.webp') no-repeat center center/cover;
 }
 
 .skill-card-back {
@@ -112,6 +112,8 @@
   margin-bottom: 1.5rem;
   text-align: center;
   color: var(--white);
+  padding: 5px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), black, rgba(0, 0, 0, 0));
 }
 
 .skills-category-title-b {

@@ -31,7 +31,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} DevPortfolio. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Kispan. All rights reserved.</p>
           <div className="social-links">
             <a href="#" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-github blue"></i>
