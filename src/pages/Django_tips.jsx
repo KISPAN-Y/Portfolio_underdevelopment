@@ -1,7 +1,10 @@
 import { djangoTips } from '../data/django-tips';
-import py from '../assets/images/py.webp';
+import py from '../assets/images/django.webp';
+import rt2 from "../assets/images/next_react.webp";
+import rt3 from "../assets/images/scalable_react.webp";
 import CopyButton from '../hooks/CopyButton';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const DjangoTips = () => {
   const [openTipId, setOpenTipId] = useState(null);
@@ -48,13 +51,15 @@ const DjangoTips = () => {
                 <div className="popular flex-column relative">
                     <div className="pst flex-column">
                         <div className="flex">
-                            <img src={ py } className='img-py' />
+                            <h2>Other Blogs </h2>
                         </div>
-                        <div className="flex">
-                            <img src={ py } className='img-py' />
+                        <div className="flex-row center gap-20">
+                            <Link to="/nextjs-vs-react"><img src={ rt2 } className='img-py' /></Link>
+                            <p className="weight-700">Next.js vs React: Understanding the Differences</p>
                         </div>
-                        <div className="flex">
-                            <img src={ py } className='img-py' />
+                        <div className="flex-row center gap-20">
+                            <Link to="/building-scalable-react-apps"><img src={ rt3 } className='img-py' /></Link>
+                            <p className="weight-700">Building Scalable React Applications</p>
                         </div>
                     </div>
                 </div>

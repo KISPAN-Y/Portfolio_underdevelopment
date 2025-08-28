@@ -1,5 +1,8 @@
 import { reactNext } from "../data/react-next";
-import rt from "../assets/images/py.webp"
+import rt from "../assets/images/next_react.webp";
+import rt2 from "../assets/images/django.webp";
+import rt3 from "../assets/images/scalable_react.webp";
+import { Link } from 'react-router-dom';
 
 const reactNextjs = () => {
     return ( 
@@ -32,13 +35,15 @@ const reactNextjs = () => {
                 <div className="popular flex-column relative">
                     <div className="pst flex-column">
                         <div className="flex">
-                            <img src={ rt } className='img-py' />
+                            <h2>Other Blogs </h2>
                         </div>
-                        <div className="flex">
-                            <img src={ rt } className='img-py' />
+                        <div className="flex-row align-items-center gap-20">
+                            <Link to="/django-rest-framework-tips"><img src={ rt2 } className='img-py' /></Link>
+                            <p className="weight-700">Django REST Framework Tips</p>
                         </div>
-                        <div className="flex">
-                            <img src={ rt } className='img-py' />
+                        <div className="flex-row center gap-20">
+                            <Link to="/building-scalable-react-apps"><img src={ rt3 } className='img-py' /></Link>
+                            <p className="weight-700">Building Scalable React Applications</p>
                         </div>
                     </div>
                 </div>
