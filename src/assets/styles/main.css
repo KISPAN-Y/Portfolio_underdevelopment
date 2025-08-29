@@ -362,6 +362,12 @@ li:hover {
   font-size: 0.9rem;
 }
 
+/* coming soon */
+.coming-soon {
+  background: var(--card-bg);
+  display: flex;
+}
+
 /* Responsive Styles */
 @media (max-width: 992px) {
   .hero-content,
