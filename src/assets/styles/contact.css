@@ -3,6 +3,7 @@
 .contact-page {
   padding: 100px 0;
   background: var(--gradient5);
+  overflow: hidden;
 }
 
 .contact-content {

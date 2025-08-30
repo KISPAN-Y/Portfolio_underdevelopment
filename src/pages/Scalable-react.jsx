@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const Scalable = () => {
     return ( 
         <section id="scalable" className="blog-single">
-            <h1>Building Scalable React Applications</h1>
+            <h1 className="white">Building Scalable React Applications</h1>
             <h3>Learn the best practices for structuring large-scale React applications that are maintainable and performant.</h3>
             <div className="container-grid">
                 <div className="tips-container">

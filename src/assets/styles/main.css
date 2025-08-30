@@ -76,6 +76,7 @@ li:hover {
   cursor: pointer;
   border: none;
   opacity: 0;
+  margin-top: 0;
 }
 
 .btn-primary {
@@ -94,6 +95,7 @@ li:hover {
   color: var(--primary-color);
   border: 2px solid var(--primary-color);
   margin-left: 15px;
+  margin-bottom: 0;
 }
 
 .btn-secondary:hover {
@@ -444,15 +446,16 @@ li:hover {
 
 @media (max-width: 576px) {
   .hero-title {
-    font-size: 2rem;
+    font-size: 1px;
   }
   
   .section-title {
     font-size: 1.8rem;
   }
   
-  .projects-grid {
+  .projects-grid, .blog-grid {
     grid-template-columns: 1fr;
+    justify-content: center;
   }
   
   .footer-bottom {

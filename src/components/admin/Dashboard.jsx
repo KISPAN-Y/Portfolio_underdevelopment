@@ -15,10 +15,10 @@ const monthlyStats = [
 ];
 
 const projectTypes = [
-  { name: 'Web Development', value: 45 },
-  { name: 'UI/UX Design', value: 30 },
-  { name: 'Mobile Apps', value: 15 },
-  { name: 'Consulting', value: 10 },
+  { name: 'Web Development', value: 45, color: '#0c0c' },
+  { name: 'UI/UX Design', value: 30, color: '#6565b1ff' },
+  { name: 'Mobile Apps', value: 15, color: '#0202' },
+  { name: 'Consulting', value: 10, color: '#798ac1ff' },
 ];
 
 
@@ -85,7 +85,7 @@ const Dashboard = () => {
                     cy="50%"
                     labelLine={false}
                     outerRadius={80}
-                    fill="#8884d8"
+                    fill="blue, black, #020204"
                     dataKey="value"
                     label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
                     />

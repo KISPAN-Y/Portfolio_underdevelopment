@@ -19,7 +19,7 @@ const DjangoTips = () => {
 
     return ( 
         <section id="djangoTips" className="blog-single flex-column center">
-            <h1>Django Tips</h1>
+            <h1 className="white">Django Tips</h1>
             <div className="container-grid">
                 <div className="tips-container">
                     {djangoTips.map((tip) =>(

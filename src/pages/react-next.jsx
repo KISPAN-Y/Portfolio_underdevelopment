@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const reactNextjs = () => {
     return ( 
         <section id="scalable" className="blog-single">
-            <h1>Building Scalable React Applications</h1>
+            <h1 className="white">Building Scalable React Applications</h1>
             <div className="container-grid">
                 <div className="center width-100  tb-container">
                     <h3 className="text-align-left"><span className="weight-700">Use React</span> when your application is highly dynamic, runs primarily in the browser (client-side), and doesn’t require SEO optimization (e.g., a logged-in user dashboard, a web app).</h3>

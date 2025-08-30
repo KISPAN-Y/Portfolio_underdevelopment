@@ -19,13 +19,13 @@ const Home = () => {
               I build exceptional digital experiences with modern technologies.
               Specializing in React, Next.js, Django, and Node.js with an eye for design.
             </p>
-            <div className="hero-actions">
-              <Link to="/projects" className="btn btn-primary animate-up">
+            <div className="hero-actions center">
+              <a href="#projects" className="btn btn-primary animate-up center">
                 View My Work
-              </Link>
-              <Link to="/contact" className="btn btn-secondary white animate-right delay-5">
+              </a>
+              <a href="#contact" className="btn btn-secondary white animate-right delay-5">
                 Contact Me
-              </Link>
+              </a>
             </div>
           </div>
           <div className="hero-image animate-right delay-5">
