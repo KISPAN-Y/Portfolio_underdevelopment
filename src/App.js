@@ -11,7 +11,6 @@ import Blog from './pages/Blog';
 import DjangoTips from './pages/Django_tips';
 import Scalable from './pages/Scalable-react';
 import reactNextjs from './pages/react-next';
-import AdminDashboard from './pages/Admin';
 import './assets/styles/main.css';
 import './assets/styles/variables.css';
 import './assets/styles/animations.css';
@@ -23,7 +22,6 @@ import './assets/styles/projects.css'
 import './assets/styles/skills.css'
 import './assets/styles/corousel.css';
 import './assets/styles/djangotips.css';
-import './assets/styles/admin.css';
 import PreLoader from './components/PreLoader';
 
 function App() {
@@ -54,7 +52,6 @@ function App() {
             <Route path="/building-scalable-react-apps" component={Scalable} />
             <Route path="/nextjs-vs-react" component={reactNextjs} />
             <Route path="/about" component={About} />
-            <Route exact path="/admin" component={AdminDashboard} />
           </Switch>
         </main>
         <Footer />
