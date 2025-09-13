@@ -1,4 +1,4 @@
 /* smpl service wrkr */
 self.addEventListener('install', (event) => {
-  console.log('Service Worker installed.');
+  console.log('App can be installed.');
 });
