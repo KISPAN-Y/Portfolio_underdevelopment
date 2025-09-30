@@ -1,7 +1,39 @@
-import { blogPosts } from '../data/blog';
+import { data } from 'motion/react-client';
+import { useEffect, useState } from 'react';
+// import { blogPosts } from '../data/blog';
 import { Link } from 'react-router-dom';
+import PreLoaderSingle from '../components/PreLoaderSingle';
 
 const Blog = () => {
+
+
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const [blogPosts, setBlogPosts] = useState([]);
+
+  const fetchBlogPosts = async () => {
+    try {
+      setLoading(true);
+      const response = await fetch('https://kispany-api.onrender.com/api/blog');
+      const blogs = await response.json();
+
+      if (blogs.success) {
+        setBlogPosts(blogs.data);
+      } else {
+        setError('Failed to fetch blogs')
+      }
+    } catch (err) {
+      setError('Error fetching blogs');
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  useEffect(() => {
+    fetchBlogPosts();
+  },[])
+
+
   return (
     <section id="blog" className="blog-page">
       <div className="container">
@@ -13,6 +45,8 @@ const Blog = () => {
           </p>
         </div>
         <div className="blog-grid">
+          <>{loading && (<PreLoaderSingle />)}</>
+          <>{error && (<p>{error}</p>)}</>
           {blogPosts.map((post) => (
             <article key={post.id} className="blog-card">
               <div className="blog-image">

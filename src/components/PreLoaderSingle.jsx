@@ -4,8 +4,6 @@ import React from 'react';
 const PreLoaderSingle = () => {
   const PreLoaderStyles = `
     .preloader {
-      width: 100%;
-      height: 100%;
       background: rgba(0, 7, 12, 1);
       display: flex;
       justify-content: center;

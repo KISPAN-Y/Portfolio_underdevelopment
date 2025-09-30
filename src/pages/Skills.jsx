@@ -74,6 +74,9 @@ const Skills = () => {
                           <PreLoader />
                         )}
                       </>
+                      {error && (
+                        <p>{error}</p>
+                      )}
                   </div>
                 </div>
               </div>
