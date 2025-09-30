@@ -32,7 +32,10 @@ const DjangoTips = () => {
                                 {openTipId === tip.id && (
                                 <div className='popup-overlay flex center' onClick={() => setOpenTipId(null)}>
                                     <div className="popup" onClick={(e) => e.stopPropagation()}>
-                                        <CopyButton content={tip.code} />
+                                        <div className='flex-row space-between'>
+                                            <CopyButton content={tip.code} />
+                                            <button onClick={() => setOpenTipId(null)}>close</button>
+                                        </div>
                                         <p>{tip.code}</p>
                                     </div>
                                 </div>
