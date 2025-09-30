@@ -1,9 +1,44 @@
-import { skills } from '../data/skills';
 import { motion } from 'framer-motion';
-import '../assets/styles/skills.css'; // Import the CSS file
+import '../assets/styles/skills.css';
 import SkillBar from '../components/SkillBar';
+import { useEffect, useState } from 'react';
+import PreLoader from '../components/PreLoader';
 
 const Skills = () => {
+
+
+  const [skills, setSkills] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null)
+
+  const fetchSkills = async () => {
+    try {
+      setLoading(true);
+      const response = await fetch('https://kispany-api.onrender.com/api/skills');
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+
+      if (data.success) {
+        setSkills(data.data);
+      }else {
+        setError('Failed to fetch skills info');
+      }
+    }catch (err) {
+      setError('Network error');
+    }finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchSkills();
+  },[])
+
+
   return (
     <section id="skills" className="skills-page">
       <div className="container">
@@ -31,9 +66,14 @@ const Skills = () => {
                   </div>
                   <div className="skill-card-back">
                     <h3 className="skills-category-title-b">Frontend Development</h3>
-                      {skills.frontend.map((skill) => (
+                      {skills.frontend?.map((skill) => (
                         <SkillBar key={skill.name} skill={skill} />
                       ))}
+                      <>
+                        {loading && (
+                          <PreLoader />
+                        )}
+                      </>
                   </div>
                 </div>
               </div>
@@ -53,9 +93,14 @@ const Skills = () => {
                   </div>
                   <div className="skill-card-back">
                     <h3 className="skills-category-title-b">Backend Development</h3>
-                      {skills.backend.map((skill) => (
+                      {skills.backend?.map((skill) => (
                         <SkillBar key={skill.name} skill={skill} />
                       ))}
+                      <>
+                        {loading && (
+                          <PreLoader />
+                        )}
+                      </>
                   </div>
                 </div>
               </div>
@@ -82,9 +127,14 @@ const Skills = () => {
                       className="width-100 flex-column"
                     >
                       <h3 className="skills-category-title-b">Design & Tools</h3>
-                      {skills.design.map((skill) => (
+                      {skills.design?.map((skill) => (
                         <SkillBar key={skill.name} skill={skill} />
                       ))}
+                      <>
+                        {loading && (
+                          <PreLoader />
+                        )}
+                      </>
                     </div>
                   </div>
                 </div>

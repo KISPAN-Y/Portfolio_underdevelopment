@@ -1,9 +1,10 @@
 import ProjectCard from '../components/ProjectCard';
-// import { projects } from '../data/projects';
 import useScrollAnimation from '../hooks/UseScrollAnimation';
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import PreLoader from '../components/PreLoader';
+import PreLoaderSingle from '../components/PreLoaderSingle';
 
 const Projects = () => {
   useScrollAnimation();
@@ -47,9 +48,6 @@ const Projects = () => {
           <button className="filter-btn white">Full Stack</button>
           <button className="filter-btn white">Design</button>
         </div>
-        {loading && (
-          <p>Loading...</p>
-        )}
         <motion.div
           initial={{ opacity: 1, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -60,6 +58,11 @@ const Projects = () => {
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
+          <>
+            {loading && (
+              <PreLoaderSingle />
+            )}
+          </>
         </motion.div>
         {error && (
           <p>{error}</p>
