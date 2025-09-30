@@ -1,12 +1,41 @@
 import ProjectCard from '../components/ProjectCard';
-import { projects } from '../data/projects';
+// import { projects } from '../data/projects';
 import useScrollAnimation from '../hooks/UseScrollAnimation';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 const Projects = () => {
   useScrollAnimation();
+
+  const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  const fetchProjects = async () => {
+    try {
+      setLoading(true);
+      const result = await fetch('https://kispany-api.onrender.com/api/projects');
+      const data = await result.json();
+
+      if (data.success){
+        setProjects(data.data);
+      }else {
+        setError('Failed to fetch projects');
+        console.log('Failed to fetch projects');
+      }
+    } catch (err) {
+      setError('Error fetching projects');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchProjects();
+  },[])
+
+
   return (
     <section id="projects" className="projects-page">
       <div className="container">
@@ -18,6 +47,9 @@ const Projects = () => {
           <button className="filter-btn white">Full Stack</button>
           <button className="filter-btn white">Design</button>
         </div>
+        {loading && (
+          <p>Loading...</p>
+        )}
         <motion.div
           initial={{ opacity: 1, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -29,6 +61,9 @@ const Projects = () => {
             <ProjectCard key={project.id} project={project} />
           ))}
         </motion.div>
+        {error && (
+          <p>{error}</p>
+        )}
         <motion.div
           initial={{ opacity: 0, y: 50, }}
           whileInView={{ opacity: 1, y: 10, }}

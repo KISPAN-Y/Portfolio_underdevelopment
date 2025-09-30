@@ -1,0 +1,61 @@
+2025-09-27 10:24:48,306 - INFO - Created new config file with defaults: config.json
+2025-09-27 10:26:49,354 - INFO - Download status for https://www.youtube.com/watch?v=J2j1yk-34OY&list=PL4cUxeGkcC9hNTz3sxqGTfxAwU-DIHJd2: Failed: [0;31mERROR:[0m [youtube] J2j1yk-34OY: Requested format is not available. Use --list-formats for a list of available formats
+2025-09-27 10:26:49,355 - ERROR - Error downloading video from https://www.youtube.com/watch?v=J2j1yk-34OY&list=PL4cUxeGkcC9hNTz3sxqGTfxAwU-DIHJd2: [0;31mERROR:[0m [youtube] J2j1yk-34OY: Requested format is not available. Use --list-formats for a list of available formats
+Traceback (most recent call last):
+  File "yt_dlp/YoutubeDL.py", line 1662, in wrapper
+  File "yt_dlp/YoutubeDL.py", line 1818, in __extract_info
+  File "yt_dlp/YoutubeDL.py", line 1877, in process_ie_result
+  File "yt_dlp/YoutubeDL.py", line 3012, in process_video_result
+yt_dlp.utils.ExtractorError: [youtube] J2j1yk-34OY: Requested format is not available. Use --list-formats for a list of available formats
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "smd/downloader.py", line 418, in download_youtube_or_tiktok_video
+  File "yt_dlp/YoutubeDL.py", line 1651, in extract_info
+  File "yt_dlp/YoutubeDL.py", line 1662, in wrapper
+  File "yt_dlp/YoutubeDL.py", line 1818, in __extract_info
+  File "yt_dlp/YoutubeDL.py", line 1897, in process_ie_result
+  File "yt_dlp/YoutubeDL.py", line 1651, in extract_info
+  File "yt_dlp/YoutubeDL.py", line 1662, in wrapper
+  File "yt_dlp/YoutubeDL.py", line 1818, in __extract_info
+  File "yt_dlp/YoutubeDL.py", line 1947, in process_ie_result
+  File "yt_dlp/YoutubeDL.py", line 2095, in __process_playlist
+  File "yt_dlp/YoutubeDL.py", line 1662, in wrapper
+  File "yt_dlp/YoutubeDL.py", line 2127, in __process_iterable_entry
+  File "yt_dlp/YoutubeDL.py", line 1897, in process_ie_result
+  File "yt_dlp/YoutubeDL.py", line 1651, in extract_info
+  File "yt_dlp/YoutubeDL.py", line 1680, in wrapper
+  File "yt_dlp/YoutubeDL.py", line 1120, in report_error
+  File "yt_dlp/YoutubeDL.py", line 1059, in trouble
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m [youtube] J2j1yk-34OY: Requested format is not available. Use --list-formats for a list of available formats
+2025-09-27 10:35:43,841 - INFO - Download status for https://www.youtube.com/watch?v=J2j1yk-34OY&list=PL4cUxeGkcC9hNTz3sxqGTfxAwU-DIHJd2&index=1&pp=iAQB: Failed: [0;31mERROR:[0m [youtube] J2j1yk-34OY: Requested format is not available. Use --list-formats for a list of available formats
+2025-09-27 10:35:43,841 - ERROR - Error downloading video from https://www.youtube.com/watch?v=J2j1yk-34OY&list=PL4cUxeGkcC9hNTz3sxqGTfxAwU-DIHJd2&index=1&pp=iAQB: [0;31mERROR:[0m [youtube] J2j1yk-34OY: Requested format is not available. Use --list-formats for a list of available formats
+Traceback (most recent call last):
+  File "yt_dlp/YoutubeDL.py", line 1662, in wrapper
+  File "yt_dlp/YoutubeDL.py", line 1818, in __extract_info
+  File "yt_dlp/YoutubeDL.py", line 1877, in process_ie_result
+  File "yt_dlp/YoutubeDL.py", line 3012, in process_video_result
+yt_dlp.utils.ExtractorError: [youtube] J2j1yk-34OY: Requested format is not available. Use --list-formats for a list of available formats
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "smd/downloader.py", line 418, in download_youtube_or_tiktok_video
+  File "yt_dlp/YoutubeDL.py", line 1651, in extract_info
+  File "yt_dlp/YoutubeDL.py", line 1662, in wrapper
+  File "yt_dlp/YoutubeDL.py", line 1818, in __extract_info
+  File "yt_dlp/YoutubeDL.py", line 1897, in process_ie_result
+  File "yt_dlp/YoutubeDL.py", line 1651, in extract_info
+  File "yt_dlp/YoutubeDL.py", line 1662, in wrapper
+  File "yt_dlp/YoutubeDL.py", line 1818, in __extract_info
+  File "yt_dlp/YoutubeDL.py", line 1947, in process_ie_result
+  File "yt_dlp/YoutubeDL.py", line 2095, in __process_playlist
+  File "yt_dlp/YoutubeDL.py", line 1662, in wrapper
+  File "yt_dlp/YoutubeDL.py", line 2127, in __process_iterable_entry
+  File "yt_dlp/YoutubeDL.py", line 1897, in process_ie_result
+  File "yt_dlp/YoutubeDL.py", line 1651, in extract_info
+  File "yt_dlp/YoutubeDL.py", line 1680, in wrapper
+  File "yt_dlp/YoutubeDL.py", line 1120, in report_error
+  File "yt_dlp/YoutubeDL.py", line 1059, in trouble
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m [youtube] J2j1yk-34OY: Requested format is not available. Use --list-formats for a list of available formats
